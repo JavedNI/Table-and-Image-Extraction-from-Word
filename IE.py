@@ -6,19 +6,66 @@ import docx2txt as d2t
 from docx.api import Document
 import pandas as pd
 import xlsxwriter
-import sys 
+import sys
+from tkinter import*
+from tkinter import filedialog
+from tkinter import messagebox
 
-
-
-print("IMAGE EXTRACTOR")
-
-
-#-----------------------------------Image Extractor-----------------------------------------------------------------------------#
 
 def extract_images_from_docx(path_to_file,images_folder,get_text=False):
     text = d2t.process(path_to_file,images_folder)
     if(get_text):
         return text
+
+def browse_file():
+    broButton["state"] = DISABLED
+    docx = filedialog.askopenfilename(filetypes = [("Docx files","*.docx")])
+    print(docx)
+    while os.path.isfile(docx) == False:
+        messagebox.showerror("Uh oh","This document does not exists")
+        docx = filedialog.askopenfilename(filetypes = [("Docx files","*.docx")])
+    else:
+        path_to_file = str(docx)
+        messagebox.showinfo("Where to save your content","Find a location where you want to save your images")
+        folder_location = filedialog.askdirectory()
+        images_folder = str(folder_location)
+        text_input = messagebox.askyesno("Extract Texts","Do you want to extract texts too?")
+        if text_input == 1:
+            data = extract_images_from_docx(path_to_file,images_folder,get_text = True)
+            count = 1
+            path = os.chdir(images_folder)
+            age_window = Toplevel()
+            age_window.title("Age")
+            age_label = Label(age_window).pack()
+            age_prompt = age_window.Entry(age_window) ##continue from here
+            age_prompt.grid()
+            new.focus()
+            age_prompt.grid()
+
+        else:
+            print("okay")
+
+            
+            
+        
+        
+        
+    
+        
+
+root = Tk()
+root.wm_title("Image Extractor!")
+broButton = Button(root,text = "Begin!", width = 6, command = browse_file)
+broButton.grid(row = 0,column = 1)
+
+
+
+root.mainloop()
+
+
+#-----------------------------------Image Extractor-----------------------------------------------------------------------------#
+
+
 #Creating the function by using docx2txt library to extract images to folder and have the ability to just copy text
 
 user_input = input("Enter the path of your word docx file w/ extension: ")
