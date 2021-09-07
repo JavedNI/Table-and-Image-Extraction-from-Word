@@ -12,11 +12,15 @@ from tkinter import filedialog
 from tkinter import messagebox
 
 
+
+
 def extract_images_from_docx(path_to_file,images_folder,get_text=False):
     text = d2t.process(path_to_file,images_folder)
     if(get_text):
         return text
 
+
+                
 def browse_file():
     broButton["state"] = DISABLED
     docx = filedialog.askopenfilename(filetypes = [("Docx files","*.docx")])
@@ -32,26 +36,43 @@ def browse_file():
         text_input = messagebox.askyesno("Extract Texts","Do you want to extract texts too?")
         if text_input == 1:
             data = extract_images_from_docx(path_to_file,images_folder,get_text = True)
-            count = 1
-            path = os.chdir(images_folder)
-            age_window = Toplevel()
-            age_window.title("Age")
-            age_label = Label(age_window).pack()
-            age_prompt = age_window.Entry(age_window) ##continue from here
-            age_prompt.grid()
-            new.focus()
-            age_prompt.grid()
 
+            def clear_label():
+                response["text"] = ""
+ 
+            def age_rename(count = 1,path = os.chdir(images_folder)):
+                age_button["state"] = DISABLED
+                try:
+                    x = int(age_prompt.get())
+                    for filename in os.listdir(path):
+                        extensions = [".jpg",".png",".bmp",".gif",".tiff",".psd",".pdf",".eps",".ai",".indd",".raw"]
+                        if filename.endswith(tuple(extensions)):
+                            new_name = ("IMG " + str(x) + "-{}.jpg").format(str(count).zfill(3))
+                            try:
+                                os.rename(filename,new_name)
+                                count = count + 1
+                            except FileExistsError as error:
+                                response.config(text = "Images already exists with that name")
+                                if filename != new_name:
+                                    os.remove(filename)                    
+                except ValueError:
+                    response.config(text = "Please enter an integer age value")
+                    age_window.after(2000,clear_label)
+                    age_button["state"] = ACTIVE
+
+            age_window = Toplevel()
+            age_window.geometry("400x400")
+            age_window.title("Age of Dataset")
+            #age_label = Label(age_window, text = "Enter the age of the Dataset").grid(row = 2, column = 2)
+            age_prompt = Entry(age_window, width = 20)
+            age_prompt.grid(row = 0, column = 50) 
+            age_button = Button(age_window, text = "Proceed",command = age_rename)
+            age_button.grid(row = 0, column = 40,pady = 5)
+            response = Label(age_window, text = "")
+            response.grid(row = 1, column = 40) 
+                       
         else:
             print("okay")
-
-            
-            
-        
-        
-        
-    
-        
 
 root = Tk()
 root.wm_title("Image Extractor!")
