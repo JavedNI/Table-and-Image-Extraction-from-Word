@@ -64,7 +64,6 @@ def extract_images():
                         except FileExistsError as error:
                             if filename != new_name:
                                 os.remove(filename)
-                            
                                 print("Identical Images which is: " + str(filename))
 
             except ValueError:
@@ -122,7 +121,6 @@ def extract_images():
 
             data_output = Label(second_frame, text = data)
             data_output.grid(row = 0, column = 0)
-
             
 
                                                            
@@ -142,14 +140,14 @@ def extract_images():
             quit_button = ttk.Button(age_window, text = "Quit", command = quit)
             quit_button.grid(row = 1, column = 40)
 
-
-
 root = ThemedTk(theme = "black")
 window(root)            
 
 root.wm_title("Image Extractor!")
 beginButton = ttk.Button(root,text = "Begin!", width = 6, command = extract_images)
 beginButton.grid(row = 0,column = 1)
+
+#### FOR TOMORROW, CHANGE UP THE SIZES OF THE WIDGETS AND TEXTBOXES
 
 quit_button = ttk.Button(root, text = "Quit", command = quit)
 quit_button.grid(row = 0,column = 2)            
