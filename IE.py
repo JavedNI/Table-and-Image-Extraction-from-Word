@@ -148,6 +148,8 @@ beginButton = ttk.Button(root,text = "Begin!", width = 6, command = extract_imag
 beginButton.grid(row = 0,column = 1)
 
 #### FOR TOMORROW, CHANGE UP THE SIZES OF THE WIDGETS AND TEXTBOXES
+###Improve on the widgets, small functions such as checking for images in file or saving function
+### Showing message on a label isntead of terminal if there exists duplicate copies
 
 quit_button = ttk.Button(root, text = "Quit", command = quit)
 quit_button.grid(row = 0,column = 2)            
