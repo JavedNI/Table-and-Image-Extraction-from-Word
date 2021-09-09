@@ -49,9 +49,8 @@ def find_document_path():
         # checks if the user wants to use the selected file path 
         check = messagebox.askyesno('File Path', 'Use this file path? ' + file_path)
         if check == 1:
-            path = file_path
             # confirms the file path being used, then changes the state of the buttons on the root label 
-            path_info = messagebox.showinfo('File path found', 'Using: '+ path)
+            path_info = messagebox.showinfo('File path found', 'Using: '+ file_path)
             open_btn['state'] = 'disabled'
             save_btn['state'] = 'normal'
         else:
