@@ -53,7 +53,7 @@ def extract_images():
             try:
                 x = int(age_prompt.get())
                 for filename in os.listdir(path):
-                    extensions = [".jpg",".png",".bmp",".gif",".tiff",".psd",".pdf",".eps",".ai",".indd",".raw"]
+                    extensions = [".jpg", ".jpeg",".png",".bmp",".gif",".tiff",".psd",".pdf",".eps",".ai",".indd",".raw"]
                     if filename.endswith(tuple(extensions)):
                         new_name = ("IMG " + str(x) + "-{}.jpg").format(str(count).zfill(3))
                         try:
