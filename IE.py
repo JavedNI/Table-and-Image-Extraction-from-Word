@@ -1,4 +1,3 @@
-import numpy as np
 import os
 import docx2txt as d2t
 from docx.api import Document
@@ -6,8 +5,9 @@ import xlsxwriter
 from tkinter import*
 from tkinter import filedialog
 from tkinter import messagebox
-from ttkthemes import ThemedTk
 from tkinter import ttk
+from ttkthemes import ThemedTk
+
 
 
 def window(main):
@@ -31,26 +31,26 @@ def quit():
 def extract_images():
     beginButton["state"] = DISABLED
     docx = filedialog.askopenfilename(filetypes = [("Docx files","*.docx")])
-    print(docx)
-    while os.path.isfile(docx) == False:
-        messagebox.showerror("Uh oh","This document does not exists")
+    print(docx) ## not needed 
+    while os.path.isfile(docx) == False: ##replace with if statement 
+        messagebox.showerror("Uh oh","This document does not exists") ##doesn't happen atm 
         docx = filedialog.askopenfilename(filetypes = [("Docx files","*.docx")])
-    else:
-        path_to_file = str(docx)
+    else: ##add a check to see if there was a file path selected 
+        path_to_file = str(docx) ##docx is a string,  not needed
         messagebox.showinfo("Where to save your content","Find a location where you want to save your images")
         folder_location = filedialog.askdirectory()
-        images_folder = str(folder_location)
+        images_folder = str(folder_location) ##str not needed 
         text_input = messagebox.askyesno("Extract Texts","Do you want to extract texts too?")
 
-        def quit():
-            root.destroy()
+        def quit(): ##not needed?
+            root.destroy() 
 
-        def clear_label():
+        def clear_label(): ##small functions not needed? 
             response["text"] = ""
 
         def age_rename(count = 1,path = os.chdir(images_folder)):
             age_button["state"] = DISABLED
-            try:
+            try: ##function needed if rolled into image extract and used excel sheet for naming refernce?
                 x = int(age_prompt.get())
                 for filename in os.listdir(path):
                     extensions = [".jpg", ".jpeg",".png",".bmp",".gif",".tiff",".psd",".pdf",".eps",".ai",".indd",".raw"]
@@ -154,8 +154,3 @@ beginButton.grid(row = 0,column = 1)
 quit_button = ttk.Button(root, text = "Quit", command = quit)
 quit_button.grid(row = 0,column = 2)            
 root.mainloop()
-
-
-
-
-
