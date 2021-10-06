@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfExtTabImg.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfExtTabImg" 
+        mc:Ignorable="d"
+        Title="MainWindow" Height="150" Width="200">
+    <StackPanel>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height=" *"/>
+                <RowDefinition Height=" *"/>
+                <RowDefinition Height=" *"/>
+            </Grid.RowDefinitions>
+
+            <Button Margin="10 10 10 0" x:Name="SelectDocButton" Click="SelectDocButton_Click" Content="Select Document" Grid.Row="0" />
+            <Button Margin="10 10 10 0" IsEnabled="False" x:Name="ExtImgButton"  Click="ExtImgButton_Click" Content="Extract Images" Grid.Row="1" />
+            <Button Margin="10 10 10 0" IsEnabled="False" x:Name="ExtTabButton" Click="ExtTabButton_Click" Content="Extract Tables" Grid.Row="2" />
+
+        </Grid>
+    </StackPanel>
+</Window>
