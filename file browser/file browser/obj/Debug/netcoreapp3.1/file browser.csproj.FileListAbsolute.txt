@@ -1,0 +1,19 @@
+C:\Users\ebenson\source\repos\file browser\file browser\bin\Debug\netcoreapp3.1\file browser.exe
+C:\Users\ebenson\source\repos\file browser\file browser\bin\Debug\netcoreapp3.1\file browser.deps.json
+C:\Users\ebenson\source\repos\file browser\file browser\bin\Debug\netcoreapp3.1\file browser.runtimeconfig.json
+C:\Users\ebenson\source\repos\file browser\file browser\bin\Debug\netcoreapp3.1\file browser.runtimeconfig.dev.json
+C:\Users\ebenson\source\repos\file browser\file browser\bin\Debug\netcoreapp3.1\file browser.dll
+C:\Users\ebenson\source\repos\file browser\file browser\bin\Debug\netcoreapp3.1\file browser.pdb
+C:\Users\ebenson\source\repos\file browser\file browser\obj\Debug\netcoreapp3.1\file browser.csproj.AssemblyReference.cache
+C:\Users\ebenson\source\repos\file browser\file browser\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\ebenson\source\repos\file browser\file browser\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\ebenson\source\repos\file browser\file browser\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\ebenson\source\repos\file browser\file browser\obj\Debug\netcoreapp3.1\file browser_MarkupCompile.cache
+C:\Users\ebenson\source\repos\file browser\file browser\obj\Debug\netcoreapp3.1\file browser.g.resources
+C:\Users\ebenson\source\repos\file browser\file browser\obj\Debug\netcoreapp3.1\file browser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ebenson\source\repos\file browser\file browser\obj\Debug\netcoreapp3.1\file browser.AssemblyInfoInputs.cache
+C:\Users\ebenson\source\repos\file browser\file browser\obj\Debug\netcoreapp3.1\file browser.AssemblyInfo.cs
+C:\Users\ebenson\source\repos\file browser\file browser\obj\Debug\netcoreapp3.1\file browser.csproj.CoreCompileInputs.cache
+C:\Users\ebenson\source\repos\file browser\file browser\obj\Debug\netcoreapp3.1\file browser.dll
+C:\Users\ebenson\source\repos\file browser\file browser\obj\Debug\netcoreapp3.1\file browser.pdb
+C:\Users\ebenson\source\repos\file browser\file browser\obj\Debug\netcoreapp3.1\file browser.genruntimeconfig.cache

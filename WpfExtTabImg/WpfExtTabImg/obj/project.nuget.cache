@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "6n9Nwtj2FZLyVcIXQnlgW1mYiGmlMDNAMHabnfcjDqPehq8sKdA+g0x+UGQ3plAhCl2Kb8KKqZ4zYWlkWw3pTA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ebenson\\source\\repos\\WpfExtTabImg\\WpfExtTabImg\\WpfExtTabImg.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ebenson\\.nuget\\packages\\documentformat.openxml\\2.13.1\\documentformat.openxml.2.13.1.nupkg.sha512",
+    "C:\\Users\\ebenson\\.nuget\\packages\\system.io.packaging\\4.7.0\\system.io.packaging.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
