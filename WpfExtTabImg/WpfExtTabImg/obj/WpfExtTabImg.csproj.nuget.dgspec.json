@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ebenson\\source\\repos\\WpfExtTabImg\\WpfExtTabImg\\WpfExtTabImg.csproj": {}
+    "C:\\Users\\ebenson\\Documents\\GitHub\\Table-and-Image-Extraction-from-Word\\WpfExtTabImg\\WpfExtTabImg\\WpfExtTabImg.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ebenson\\source\\repos\\WpfExtTabImg\\WpfExtTabImg\\WpfExtTabImg.csproj": {
+    "C:\\Users\\ebenson\\Documents\\GitHub\\Table-and-Image-Extraction-from-Word\\WpfExtTabImg\\WpfExtTabImg\\WpfExtTabImg.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ebenson\\source\\repos\\WpfExtTabImg\\WpfExtTabImg\\WpfExtTabImg.csproj",
+        "projectUniqueName": "C:\\Users\\ebenson\\Documents\\GitHub\\Table-and-Image-Extraction-from-Word\\WpfExtTabImg\\WpfExtTabImg\\WpfExtTabImg.csproj",
         "projectName": "WpfExtTabImg",
-        "projectPath": "C:\\Users\\ebenson\\source\\repos\\WpfExtTabImg\\WpfExtTabImg\\WpfExtTabImg.csproj",
+        "projectPath": "C:\\Users\\ebenson\\Documents\\GitHub\\Table-and-Image-Extraction-from-Word\\WpfExtTabImg\\WpfExtTabImg\\WpfExtTabImg.csproj",
         "packagesPath": "C:\\Users\\ebenson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ebenson\\source\\repos\\WpfExtTabImg\\WpfExtTabImg\\obj\\",
+        "outputPath": "C:\\Users\\ebenson\\Documents\\GitHub\\Table-and-Image-Extraction-from-Word\\WpfExtTabImg\\WpfExtTabImg\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ebenson\\AppData\\Roaming\\NuGet\\NuGet.Config",
