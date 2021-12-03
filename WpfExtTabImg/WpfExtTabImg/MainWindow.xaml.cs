@@ -279,7 +279,7 @@ namespace WpfExtTabImg
             if (openFileDialog.ShowDialog() == true)
             {
                 //stores filePath as a string to be accessed by other functions 
-                String filePath = openFileDialog.FileName;
+                string filePath = openFileDialog.FileName;
 
                 //checks if a file has been selected 
                 if (saveFileDialog.ShowDialog() == true)
