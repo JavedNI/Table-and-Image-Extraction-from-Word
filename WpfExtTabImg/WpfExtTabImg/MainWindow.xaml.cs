@@ -139,8 +139,9 @@ namespace WpfExtTabImg
             #region Read/Write Table Contents 
             try
             {
+                object temp = @"C:\Users\ebenson\Documents\Innovative docs\Face collection (30yrold).docx";
                 //open the Word file in "ReadOnly" mode.
-                wDoc = wApp.Documents.Open(ref fileName, ref missing, ref missing, ref missing, ref missing,
+                wDoc = wApp.Documents.Open(ref temp, ref missing, ref missing, ref missing, ref missing,
                     ref missing, ref missing, ref missing, ref missing, ref missing,
                     ref missing, ref missing, ref missing, ref missing, ref missing, ref missing);
 
